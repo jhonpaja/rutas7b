@@ -37,7 +37,11 @@
 
     function menu(url){
         clearContainer();
-        $('#container-main').load(url).wait(1000);
+        //$('#container-main').load(url).wait(1000);
+
+        setTimeout(function(){
+            $('#container-main').load(url);
+        }, 2000);
     }
 
     function menuPost(url){
